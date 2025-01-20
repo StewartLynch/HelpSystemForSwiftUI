@@ -23,6 +23,13 @@ struct PeopleListView: View {
     var body: some View {
         List(store.people, selection: Bindable(appState).selectedPerson) { person in
             PersonRowView(person: person).tag(person)
+                .swipeActions {
+                    Button(role: .destructive) {
+                        store.delete(person: person)
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                }
         }
         .listStyle(.plain)
         .navigationTitle("People")

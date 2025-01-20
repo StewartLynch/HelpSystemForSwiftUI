@@ -45,4 +45,11 @@ class PeopleStore {
         guard let id else { return nil }
         return people.first(where: {$0.id == id })
     }
+    
+    func delete(person: Person) {
+        let personIndex = people.firstIndex(where: {$0.id == person.id})
+        if let personIndex {
+            people.remove(at: personIndex)
+        }
+    }
 }
