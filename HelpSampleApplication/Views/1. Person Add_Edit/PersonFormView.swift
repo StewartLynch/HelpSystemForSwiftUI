@@ -20,7 +20,7 @@ struct PersonFormView: View {
     @Environment(PeopleStore.self) private var store
     @Environment(\.dismiss) private var dismiss
     @State var model: PersonFormModel
-    
+    @State private var help: HelpType?
     
     var body: some View {
         Form {
@@ -58,6 +58,7 @@ struct PersonFormView: View {
             }
         }
         .inNavStack(inNavigation: !model.isUpdating)
+        .helpButton(currentHelp: model.isUpdating ? .personEdit : .personAdd, help: $help)
     }
 }
 

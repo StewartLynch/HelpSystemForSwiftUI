@@ -19,6 +19,7 @@ import Charts
 
 struct DistributionView: View {
     @Environment(PeopleStore.self) private var peopleStore
+    @State private var help: HelpType?
     var ageDistribution: [(range: String, count: Int)] {
         let ranges = stride(from: 0, through: 80, by: 5).map { start in
             (start...(start + 4))
@@ -53,6 +54,7 @@ struct DistributionView: View {
             .padding()
             .navigationTitle("Age Distribution")
         }
+        .helpButton(currentHelp: .distribution, help: $help)
     }
 }
 
