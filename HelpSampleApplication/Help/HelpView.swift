@@ -54,6 +54,7 @@ struct HelpView: View {
                 .scrollPosition(id: $scrollID)
                 .scrollTargetBehavior(.paging)
                 HelpIndicatorView(pageCount: pages.count, scrollID: $scrollID)
+                    .padding(.bottom)
             }
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
