@@ -50,7 +50,7 @@ extension HelpType {
                         text: """
 This is a list of all people in our organization.  You will be able to add, edit and delete individuals from the list. **Swipe to the right** to see more help for this screen.
 
-If you wish to see more information about this organization, visit our website (CreaTech Solutions)[https://www.createchsol.com]
+If you wish to see more information about this organization, visit our website [CreaTech Solutions](https://www.createchsol.com)
 """
                     ),
                     HelpPage(
