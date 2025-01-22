@@ -40,7 +40,6 @@ struct HelpView: View {
                                     .multilineTextAlignment(.center)
                                 ScrollView {
                                     Text(page.text)
-                                        .frame(maxWidth: .infinity, alignment: .trailing)
                                 }
                                 .contentMargins(15, for: .scrollContent)
                                 Spacer()
