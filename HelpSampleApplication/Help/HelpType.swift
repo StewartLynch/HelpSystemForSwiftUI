@@ -16,7 +16,7 @@
 import SwiftUI
 
 enum HelpType: Identifiable, View  {
-    case peopleList, personEdit, personAdd, distribution, settings
+    case peopleList, personEdit, personAdd, distribution, settings, contact
     var id: Self { self }
     
     var title: String {
@@ -31,6 +31,8 @@ enum HelpType: Identifiable, View  {
                 "Age Distribution"
             case .settings:
                 "Settings"
+            case .contact:
+                "Contact Developer"
         }
     }
     
@@ -46,6 +48,7 @@ extension HelpType {
                 [
                     HelpPage(
                         image: Image(systemName: "person.3.fill"),
+                        imageRatio: .quarter,
                         title: "Person List",
                         text: """
 This is a list of all people in our organization.  You will be able to add, edit and delete individuals from the list. **Swipe to the right** to see more help for this screen.
@@ -62,6 +65,7 @@ You will not be able to add unless both a first and last name are provided.
                     ),
                     HelpPage(
                         image: Image(.swipeDelete),
+                        imageRatio: .half,
                         title: "Delete person",
                         text: """
 To delete a person from the list, **swipe from the trailing edge of the row** until you see the *delete* button.  Then you can tap on it to remove the person from the list
@@ -105,7 +109,29 @@ Temporibus omnis molestiae. Possimus est vero aut dicta. Autem at ut. Natus simi
                 ]
             case .settings:
                 [
-                    HelpPage(image: Image(systemName: "gear"), title: "", text: "")
+                    HelpPage(
+                        image: Image(systemName: "gear"),
+                        imageRatio: .half,
+                        title: "",
+                        text: ""
+                    )
+                ]
+            case .contact:
+                [
+                    HelpPage(
+                        image: Image(systemName: "person.text.rectangle"),
+                        imageRatio: .fifth,
+                        title: "Developer Contact Information",
+                        text: """
+Please address all questions and direct feedback to the email address listed below.  Every attempt will be made to get back to you within 2 business days.
+
+- [General Questions](mailto:questions@myapp.com)
+- [Feedback](mailto:feedback@myapp.com)
+- [Bug Report](mailto:bugs@myapp.com)
+
+You can also check out the **FAQ** at our web site [FAQ](https://www.createchsol.com)
+"""
+                    )
                 ]
         }
     }

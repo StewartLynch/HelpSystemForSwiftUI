@@ -17,10 +17,12 @@ import SwiftUI
 
 struct HelpPage {
     let image: Image?
+    let imageRatio: CGFloat
     let title: String
     let text: LocalizedStringKey
-    init(image: Image? = nil, title: String, text: LocalizedStringKey) {
+    init(image: Image? = nil, imageRatio: ImageRatio = .third, title: String, text: LocalizedStringKey) {
         self.image = image
+        self.imageRatio = imageRatio.rawValue
         self.title = title
         self.text = text
     }
