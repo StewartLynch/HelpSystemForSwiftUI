@@ -1,6 +1,6 @@
 # Creating your own Help System
 
-![mac128](Images/mac128.png) This is the Starter Project branch  for the video on creating your own Help System in SwiftUI
+![mac128](Images/mac128.png) This is the Completed Source Code for the Part2 branch  for the video on creating your own Help System in SwiftUI
 
 
 
