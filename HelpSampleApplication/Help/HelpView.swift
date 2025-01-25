@@ -42,6 +42,7 @@ struct HelpView: View {
                                     Text(page.text)
                                 }
                                 .contentMargins(15, for: .scrollContent)
+                                .scrollBounceBehavior(.basedOnSize)
                                 Spacer()
                             }
                             .padding()
