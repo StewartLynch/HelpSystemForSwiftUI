@@ -1,8 +1,9 @@
 # Creating your own Help System
 
 ![mac128](Images/mac128.png) This is the Starter Project branch  for the video on creating your own Help System in SwiftUI
-
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://youtu.be/vr6gn8GRsvg
+" target="_blank"><img src="http://img.youtube.com/vi/https://youtu.be/vr6gn8GRsvg/0.jpg" 
+alt="Help System for SwiftUI" width="480" height="360" border="1" /></a>
 
 If you want to support my work, you can - </br>
 
